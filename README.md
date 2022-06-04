@@ -41,3 +41,5 @@ First run will create `/images/banner`, `/images/profile` and `/json` folders. M
 `members.json` is created from fetched data and image files are downloaded to relavant folders.
 
 Successive runs (manually done) check if images already exist and will only redownload if a member has updated their Twitter profile or banner image. `members.json` is rewritten on each run since the user object is stored in cache to check against each time.
+
+(note: needs to be run twice when adding a new member)
