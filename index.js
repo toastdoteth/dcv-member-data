@@ -1,6 +1,5 @@
 const client = require("./twitterClient");
-const { dcvMembers} = require("./models/model.js");
-const { processMemberData } = require("./models/model.js");
+const { dcvMembers, processMemberData } = require("./models/model.js");
 const { saveProfileImage, saveBanner } = require("./imageController")
 const fs = require('fs');
 
@@ -49,7 +48,7 @@ async function imageDownload() {
             }
             saveProfileImage(savedName, dcvMembers[key].profile_image_url)
         }
-        
+
         //check if banner URL exists
         if(dcvMembers[key].profile_banner_url) {
             if (!bannerResult || (!fs.existsSync(`./images/banner/${savedName + "_banner"}.png`))) {
