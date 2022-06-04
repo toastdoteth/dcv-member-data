@@ -7,7 +7,7 @@
 
 ### About
 
-Fetches Twitter User object from list of users stored in local object. Downloads Twitter profile and banner images of each user, resizes and stores their data to be used for dynamic site.
+Fetches Twitter User object and compares to local object data. Downloads Twitter profile and banner images of each user, resizes and stores their data to be used for dynamic site.
 
 ### Deps
 
