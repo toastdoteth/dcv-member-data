@@ -5,14 +5,16 @@
 <h3>DCV Member Twitter Fetch</h3>
 </div>
 
-### deps
+### About
+
+Fetches Twitter User object from list of users stored in local object. Downloads Twitter profile and banner images of each user and stores their data to be used for dynamic siteS.
+
+### Deps
 
 * [Twitter API v2](https://www.npmjs.com/package/twitter-api-v2)
 * [axios](https://www.npmjs.com/package/axios)
 * [sharp](https://www.npmjs.com/package/sharp)
 * [dotenv](https://www.npmjs.com/package/dotenv)
-
-<br>
 
 ### Installation
 
@@ -28,11 +30,9 @@
    ```
 4. Enter your API keys in `.env_sample` and rename file to `.env`
 
-<br>
-
 ### Usage
 
-First run will create `/images/banner`, `/images/profile` and `/json` folders.
+First run will create `/images/banner`, `/images/profile` and `/json` folders. Members images downloaded.
 
 `members.json` is created from fetched data and image files are downloaded to relavant folders.
 
